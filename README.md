@@ -17,7 +17,7 @@ This workspace showcases a production-ready React application architecture with:
 
 ## Demo
 
-[![Demo Video](./video.mov)](./video.mov)
+[![Demo Video](./video.mp4)](./video.mp4)
 
 ## Workspace Structure
 

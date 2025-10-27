@@ -15,6 +15,10 @@ This workspace showcases a production-ready React application architecture with:
 - **Nx monorepo** with proper package structure
 - **Custom generator** for creating new React Router v7 apps
 
+## Demo
+
+[![Demo Video](./video.mov)](./video.mov)
+
 ## Workspace Structure
 
 ```

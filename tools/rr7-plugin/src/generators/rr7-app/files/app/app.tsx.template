@@ -1,0 +1,35 @@
+import { Link } from 'react-router';
+
+export function App() {
+  return (
+    <div className="bg-gray-50">
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Welcome to <%= appName %>
+          </h1>
+          <p className="text-xl text-gray-600">
+            Your React Router v7 application is ready to go!
+          </p>
+        </div>
+        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="bg-white rounded-lg shadow p-6">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Getting Started</h3>
+            <p className="text-gray-600 mb-4">
+              Check out Introduction for more information about building with React Router v7.
+            </p>
+            <a
+              href="https://reactrouter.com"
+              className="text-blue-600 hover:text-blue-800"
+            >
+              Learn more →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "id": "rr7-app",
+  "title": "RR7 App Generator",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "App name (kebab-case)",
+      "x-prompt": "What is the name of the app?"
+    },
+    "directory": {
+      "type": "string",
+      "description": "Optional subdirectory under apps/"
+    },
+    "tags": {
+      "type": "string",
+      "description": "Comma-separated tags (e.g. scope:web,type:app)"
+    },
+    "withTailwind": {
+      "type": "boolean",
+      "description": "Include Tailwind (v4 defaults)",
+      "default": true
+    },
+    "withShadcn": {
+      "type": "boolean",
+      "description": "Initialize shadcn/ui (requires Tailwind)",
+      "default": false
+    }
+  },
+  "required": ["name"]
+}

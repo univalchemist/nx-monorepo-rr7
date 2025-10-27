@@ -1,0 +1,35 @@
+/// <reference types='vitest' />
+import { defineConfig } from 'vite';
+import { reactRouter } from '@react-router/dev/vite';
+<% if (withTailwind) { -%>
+import tailwindcss from '@tailwindcss/vite';
+<% } -%>
+import path from 'path';
+
+export default defineConfig(() => ({
+  root: __dirname,
+  cacheDir: '<%= offsetFromRoot %>node_modules/.vite/<%= projectRoot %>',
+  server: {
+    port: 4200,
+    host: 'localhost',
+  },
+  preview: {
+    port: 4300,
+    host: 'localhost',
+  },
+  plugins: [<% if (withTailwind) { -%>!process.env.VITEST && <% } -%>reactRouter()<% if (withTailwind) { -%>, tailwindcss()<% } -%>],
+  resolve: {
+    alias: {
+      '@michael-assessment/shadcn-components': path.resolve(__dirname, '../../packages/shadcn-components/src'),
+      '@michael-assessment/shadcn-utils': path.resolve(__dirname, '../../packages/shadcn-utils/src'),
+    },
+  },
+  build: {
+    outDir: './dist',
+    emptyOutDir: true,
+    reportCompressedSize: true,
+    commonjsOptions: {
+      transformMixedEsModules: true,
+    },
+  },
+}));

@@ -1,0 +1,31 @@
+{
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "<%= offsetFromRoot %>packages/shadcn-components"
+    },
+    {
+      "path": "<%= offsetFromRoot %>packages/ui"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ],
+  "extends": "<%= offsetFromRoot %>tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
+    "types": ["@react-router/node"],
+    "baseUrl": ".",
+    "paths": {
+      "@michael-assessment/shadcn-components": [
+        "<%= offsetFromRoot %>packages/shadcn-components/src"
+      ],
+      "@michael-assessment/shadcn-utils": ["<%= offsetFromRoot %>packages/shadcn-utils/src"]
+    }
+  }
+}

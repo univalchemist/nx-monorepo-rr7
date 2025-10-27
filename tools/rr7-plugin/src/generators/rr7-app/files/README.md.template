@@ -1,0 +1,81 @@
+# <%= appName %>
+
+This app was generated with the Nx React Router v7 generator (`@michael-assessment/rr7-plugin`).
+
+## Getting Started
+
+### Development Server
+
+```bash
+nx dev <%= appName %>
+```
+
+This will start the React Router dev server on http://localhost:4200
+
+### Build
+
+```bash
+nx build <%= appName %>
+```
+
+Builds the app for production into the `build/` directory.
+
+### Start Production Server
+
+```bash
+nx start <%= appName %>
+```
+
+Serves the production build.
+
+### Test
+
+```bash
+nx test <%= appName %>
+```
+
+Runs Jest unit tests.
+
+### Lint
+
+```bash
+nx lint <%= appName %>
+```
+
+Runs ESLint to check for linting errors.
+
+## Project Structure
+
+```
+<%= appName %>/
+├── app/
+│   ├── app.tsx          # Main app component (index route)
+│   ├── root.tsx         # Root layout with React Router
+│   └── routes.tsx       # Route configuration
+├── src/
+│   ├── styles.css       # Global styles
+│   └── test-setup.ts    # Test setup file
+├── package.json         # App dependencies
+├── vite.config.ts       # Vite configuration
+├── react-router.config.ts
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.spec.json
+├── jest.config.ts
+└── eslint.config.mjs
+```
+
+## Features
+
+- **React Router v7**: Modern file-based routing
+- **Tailwind CSS**: Utility-first CSS framework
+- **TypeScript**: Type-safe development
+- **Nx Integration**: Full Nx workspace support
+- **Testing**: Jest configured and ready
+- **ESLint**: Code quality checks
+
+## Learn More
+
+- [React Router Documentation](https://reactrouter.com)
+- [Nx Documentation](https://nx.dev)
+- [Tailwind CSS Documentation](https://tailwindcss.com)

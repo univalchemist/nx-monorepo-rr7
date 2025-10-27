@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@import "../../../packages/shadcn-utils/src/global.css";
+
+@source "../../../packages/ui";
+@source "../../../packages/shadcn-components";
+
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}

@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/monoquest"
+    },
+    {
+      "path": "./packages/ui"
+    },
+    {
+      "path": "./tools/tailwind-sync-plugin"
+    },
+    {
+      "path": "./packages/shadcn-components"
+    },
+    {
+      "path": "./packages/shadcn-utils"
+    },
+    {
+      "path": "./tools/rr7-plugin"
+    }
+  ]
+}
